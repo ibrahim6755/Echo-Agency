@@ -13,7 +13,7 @@ function Hero() {
               WELCOME TO OUR SITE
             </Badge>
 
-            <h1 className="title-font sm:text-4xl text-9xl mb-4 font-bold custom_blue ">
+            <h1 className="title-font text-4xl md:text-6xl mb-4 font-bold custom_blue ">
               Expert SEO, SEM Services in London
             </h1>
             <p className="mb-8 leading-relaxed custom_grey text-sm">
@@ -38,7 +38,7 @@ function Hero() {
               </Button>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-1/2">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
             <Image
               src="/images/carousel-image.jpg"
               width={600}
