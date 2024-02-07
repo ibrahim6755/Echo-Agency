@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,12 +12,20 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 function Navbar() {
   return (
     <div className="container mx-auto px-auto py-8">
-      <header className="flex justify-between items-center">
+      <header className="hidden md:flex justify-between items-center">
         <div className="logo">
           <Link href="/">
             <Image
@@ -35,7 +45,7 @@ function Navbar() {
               <DropdownMenu>
                 <DropdownMenuTrigger className="outline-none flex items-center justify-center px-2">
                   Dropdown
-                  <ChevronDown className="text-sm custom_blue py-0 my-0"/>
+                  <ChevronDown className="text-sm custom_blue py-0 my-0" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuSeparator />
@@ -65,6 +75,86 @@ function Navbar() {
             </li>
           </ul>
         </div>
+      </header>
+
+      <header>
+        <nav className="flex justify-between md:hidden">
+          <Link href="/">
+            <Image
+              src="/images/echo-logo.jpg"
+              alt="company-logo"
+              height={80}
+              width={80}
+            />
+          </Link>
+          <Sheet>
+            <SheetTrigger>
+              <Menu />
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>
+                  {" "}
+                  <Image
+                    src="/images/echo-logo.jpg"
+                    alt="company-logo"
+                    height={80}
+                    width={80}
+                  />
+                </SheetTitle>
+                <SheetDescription>
+                  <div className="links mt-10">
+                    <ul className="flex flex-col items-start">
+                      <li className="list-none my-4  text-sm cursor-pointer custom_grey">
+                        Home
+                      </li>
+                      <li className="list-none my-4  text-sm cursor-pointer custom_grey">
+                        <DropdownMenu>
+                          <DropdownMenuTrigger className="outline-none flex items-center justify-center ">
+                            Dropdown
+                            <ChevronDown className="text-sm custom_grey py-0 my-0" />
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent className="mx-48">
+                            <DropdownMenuSeparator />
+                            <DropdownMenuItem className="custom_grey">
+                              Profile
+                            </DropdownMenuItem>
+                            <DropdownMenuItem className="custom_grey">
+                              Billing
+                            </DropdownMenuItem>
+                            <DropdownMenuItem className="custom_grey">
+                              Team
+                            </DropdownMenuItem>
+                            <DropdownMenuItem className="custom_grey">
+                              Subscription
+                            </DropdownMenuItem>
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </li>
+                      <li className="list-none my-4  text-sm cursor-pointer custom_grey">
+                        About
+                      </li>
+                      <li className="list-none my-4  text-sm cursor-pointer custom_grey">
+                        Services
+                      </li>
+                      <li className="list-none my-4  text-sm cursor-pointer custom_grey">
+                        FAQ
+                      </li>
+                      <li className="list-none my-4 text-sm cursor-pointer custom_grey">
+                        <Button
+                          variant="ghost"
+                          className="custom_bg_blue custom_yellow rounded-full border border-transparent hover:border-gray-200 transition duration-300"
+                        >
+                          Contact Us
+                        </Button>
+                      </li>
+                    </ul>
+                  </div>
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+        </nav>
       </header>
     </div>
   );
