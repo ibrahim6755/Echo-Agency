@@ -54,7 +54,7 @@ function TestimonialSection() {
                       height={50}
                       className="rounded-full"
                     />
-                    <div className="info">
+                    <div className="info ms-3">
                       <h1 className="text-xs custom_grey">
                         {testimonial.name}
                       </h1>

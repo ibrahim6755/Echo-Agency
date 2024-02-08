@@ -1,19 +1,23 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
     <footer className="text-gray-600 body-font container">
       <div className="container px-5 py-24 mx-auto flex md:items-center justify-center lg:items-start md:flex-row  flex-col">
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div className="w-full md:w-72 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <Link
+            href="#"
+            className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
             <Image
               src="/images/echo-logo.jpg"
               alt="company-logo"
               height={80}
               width={80}
             />
-          </a>
+          </Link>
           <p className="mt-2 text-sm text-gray-500">
             We are Echo, a digital agency specializing in creating innovative
             websites and applications.
@@ -26,13 +30,28 @@ function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">Blog</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  Blog
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">About</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">Contact</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  Contact
+                </Link>
               </li>
             </nav>
           </div>
@@ -41,14 +60,29 @@ function Footer() {
               Resources
             </h2>
             <nav className="list-none mb-10">
-            <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">Blog</a>
+              <li>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  Blog
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">About</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">Contact</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  Contact
+                </Link>
               </li>
             </nav>
           </div>
@@ -57,14 +91,29 @@ function Footer() {
               Contact
             </h2>
             <nav className="list-none mb-10">
-            <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">info@Cololib</a>
+              <li>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  info@Cololib
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">+1 222 212 3819</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  +1 222 212 3819
+                </Link>
               </li>
               <li>
-                <a className="custom_grey hover:text-gray-200 text-xs">43 Raymouth Rd. Baltemoer, London 3910</a>
+                <Link
+                  href="#"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  43 Raymouth Rd. Baltemoer, London 3910
+                </Link>
               </li>
             </nav>
           </div>
@@ -74,61 +123,61 @@ function Footer() {
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="custom_grey text-sm text-center sm:text-left">
             © 2024 EchoAgency —
-            <a
+            <Link
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
               className="custom_grey ml-1"
               target="_blank"
             >
               @ibrahimghani030
-            </a>
+            </Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a className="text-gray-500">
+            <Link href="#" className="text-gray-500">
               <svg
                 fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="w-5 h-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
+            </Link>
+            <Link href="#" className="ml-3 text-gray-500">
               <svg
                 fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="w-5 h-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
+            </Link>
+            <Link href="#" className="ml-3 text-gray-500">
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 className="w-5 h-5"
                 viewBox="0 0 24 24"
               >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
+            </Link>
+            <Link href="#" className="ml-3 text-gray-500">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="0"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="0"
                 className="w-5 h-5"
                 viewBox="0 0 24 24"
               >
@@ -138,7 +187,7 @@ function Footer() {
                 ></path>
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
-            </a>
+            </Link>
           </span>
         </div>
       </div>
