@@ -1,10 +1,11 @@
 import AboutUsSection from "@/components/AboutUsSection";
 import FeatureSection from "@/components/FeatureSection";
 import Hero from "@/components/Hero";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-auto">
+    <main className="md:container md:mx-auto md:px-auto px-10">
       <section>
         <Hero />
       </section>
@@ -12,7 +13,10 @@ export default function Home() {
         <FeatureSection />
       </section>
       <section>
-        <AboutUsSection/>
+        <AboutUsSection />
+      </section>
+      <section>
+        <ServicesSection />
       </section>
     </main>
   );
