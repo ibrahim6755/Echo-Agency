@@ -32,7 +32,7 @@ function Hero() {
               </Button>
               <Button
                 variant="ghost"
-                className="mx-2 p-6 text-black rounded-full border border-transparent hover:border-gray-300 hover:bg_blue transition duration-300"
+                className="mx-2 p-6 custom_blue rounded-full border border-transparent hover:border-gray-300 hover:bg_blue transition duration-300"
               >
                 Contact Us
               </Button>

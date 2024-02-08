@@ -21,6 +21,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Toggle } from "./Toggle";
 
 function Navbar() {
   return (
@@ -65,6 +66,9 @@ function Navbar() {
             <li className="list-none mx-2 px-2 text-sm cursor-pointer custom_blue">
               FAQ
             </li>
+            <li className="list-none my-4  text-sm cursor-pointer custom_blue">
+              <Toggle />
+            </li>
             <li className="list-none mx-2 px-2 text-sm cursor-pointer custom_blue">
               <Button
                 variant="ghost"
@@ -87,6 +91,10 @@ function Navbar() {
               width={80}
             />
           </Link>
+          <div className="div flex ">
+          <li className="list-none mx-2 text-sm cursor-pointer">
+              <Toggle />
+            </li>
           <Sheet>
             <SheetTrigger>
               <Menu />
@@ -140,6 +148,7 @@ function Navbar() {
                       <li className="list-none my-4  text-sm cursor-pointer custom_grey">
                         FAQ
                       </li>
+
                       <li className="list-none my-4 text-sm cursor-pointer custom_grey">
                         <Button
                           variant="ghost"
@@ -154,6 +163,7 @@ function Navbar() {
               </SheetHeader>
             </SheetContent>
           </Sheet>
+          </div>
         </nav>
       </header>
     </div>
