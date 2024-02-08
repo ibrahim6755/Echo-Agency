@@ -25,8 +25,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ data }) => {
               width={60}
               height={100}
             />
-            <h1 className="text-center font-bold text-2xl my-2">{service.title}</h1>
-            <h3 className="text-sm text-center text-gray-700">{service.description}</h3>
+            <h1 className="text-center font-bold text-2xl my-2 custom_blue">{service.title}</h1>
+            <h5 className="text-sm text-center custom_grey">{service.description}</h5>
           </div>
         </div>
       ))}

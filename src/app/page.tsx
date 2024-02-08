@@ -2,6 +2,7 @@ import AboutUsSection from "@/components/AboutUsSection";
 import FeatureSection from "@/components/FeatureSection";
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </section>
       <section>
         <ServicesSection />
+      </section>
+      <section>
+        <TestimonialSection/>
       </section>
     </main>
   );
