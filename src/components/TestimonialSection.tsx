@@ -1,5 +1,3 @@
-import React from "react";
-import { Badge } from "./ui/badge";
 import {
   Carousel,
   CarouselContent,
@@ -7,9 +5,21 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import TestimonialCard from "./TestimonialCard";
+import { testimonialCardData } from "@/data";
+import Image from "next/image";
+import { Badge } from "./ui/badge";
+
+interface TestimonialCardProps {
+  id: number;
+  image: string;
+  name: string;
+  job: string;
+  description: string;
+}
 
 function TestimonialSection() {
+  const testimonialData: TestimonialCardProps[] = testimonialCardData;
+
   return (
     <section className="flex flex-col items-center justify-center my-4">
       <Badge className="custom_yellow text-xs bg-yellow-100 my-3">
@@ -24,22 +34,34 @@ function TestimonialSection() {
         Bookmarksgrove right at the coast of the Semantics, a large language
         ocean.
       </p>
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="w-4/5 my-14"
-      >
+      <Carousel opts={{ align: "start" }} className="w-4/5 my-14">
         <CarouselContent>
-          {Array.from({ length: 6 }).map((_, index) => (
-            <CarouselItem key={index} className=" md:basis-1/2 lg:basis-1/3 ">
-              <div className="p-1">
-                {/* <div>
-                <div className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
+          {testimonialData.map((testimonial) => (
+            <CarouselItem
+              key={testimonial.id}
+              className="md:basis-1/2 lg:basis-1/3"
+            >
+              <div className="bg-gray-100 p-5 rounded-md">
+                <h2 className="custom_grey text-sm">
+                  “{testimonial.description}”
+                </h2>
+                <div className="person bg-gray-100 m-3">
+                  <div className="image flex justify-center items-center">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={50}
+                      height={50}
+                      className="rounded-full"
+                    />
+                    <div className="info">
+                      <h1 className="text-xs custom_grey">
+                        {testimonial.name}
+                      </h1>
+                      <h1 className="text-xs custom_grey">{testimonial.job}</h1>
+                    </div>
+                  </div>
                 </div>
-              </div> */}
-                <TestimonialCard />
               </div>
             </CarouselItem>
           ))}

@@ -12,6 +12,13 @@ interface ServiceCard{
   description: string;
 }
   
+interface TestimonialCard{
+  id: number;
+  image: string;
+  name: string;
+  job:string;
+  description: string;
+}
   export const featureCardData: FeatureCard[] = [
     {
       id: 1,
@@ -80,4 +87,49 @@ interface ServiceCard{
           "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       },
     
+  ]
+
+  export const testimonialCardData:TestimonialCard[]=[{
+    
+      id: 1,
+      image: "/images/testimonial.jpg",
+      name: "Drew Wood",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
+    {
+      id: 2,
+      image: "/images/testimonial.jpg",
+      name: "Michelle Alisson",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
+    {
+      id: 3,
+      image: "/images/testimonial.jpg",
+      name: "Carl Anderson",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
+    {
+      id: 4,
+      image: "/images/testimonial.jpg",
+      name: "Drew Wood",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
+    {
+      id: 5,
+      image: "/images/testimonial.jpg",
+      name: "Michelle Alisson",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
+    {
+      id: 6,
+      image: "/images/testimonial.jpg",
+      name: "Carl Anderson",
+      job:"Director at Google",
+      description:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    },
   ]
