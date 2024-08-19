@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                       target="_blank"
                       className="main-color  inline-flex items-center md:mb-2 lg:mb-0"
                     >
-                      Explore
+                      Explore the site
                       <svg
                         className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
