@@ -16,23 +16,24 @@ function Footer() {
               alt="company-logo"
               height={80}
               width={80}
-            /> */}Portfolio
+            /> */}
+             <h1 className="text-start text-2xl font-bold main-color">Nimra Nisar</h1>
           </Link>
-          <p className="mt-2 text-sm dark-gray-text">
+          <p className="mt-2 text-sm dark-gray-text dark:text-gray-400">
             We are Echo, a digital agency specializing in creating innovative
             websites and applications.
           </p>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium custom_blue tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium main-color tracking-widest text-sm mb-3">
               Sites
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <Link
                   href="https://iyzil.com/"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   Iyzil
                 </Link>
@@ -40,7 +41,7 @@ function Footer() {
               <li>
                 <Link
                   href="https://iylus.com/"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   Iylus
                 </Link>
@@ -48,7 +49,7 @@ function Footer() {
               <li>
                 <Link
                   href="https://zigron.com/"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   Zigron
                 </Link>
@@ -56,14 +57,14 @@ function Footer() {
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium custom_blue tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium main-color tracking-widest text-sm mb-3">
               Sections
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <Link
                   href="#about"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   About
                 </Link>
@@ -71,7 +72,7 @@ function Footer() {
               <li>
                 <Link
                   href="#projects"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   Projects
                 </Link>
@@ -79,7 +80,7 @@ function Footer() {
               <li>
                 <Link
                   href="#services"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   Services
                 </Link>
@@ -87,14 +88,14 @@ function Footer() {
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium custom_blue tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium main-color tracking-widest text-sm mb-3">
               Contact
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <Link
                   href="#"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   info@Cololib
                 </Link>
@@ -102,7 +103,7 @@ function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   +1 222 212 3819
                 </Link>
@@ -110,7 +111,7 @@ function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="custom_grey hover:text-gray-400 text-xs"
+                  className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
                   43 Raymouth Rd. Baltemoer, London 3910
                 </Link>
@@ -121,7 +122,7 @@ function Footer() {
       </div>
       <div className="">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="dark-gray-text text-sm text-center sm:text-left">
+          <p className="main-color text-sm text-center sm:text-left">
             © 2024 Portfolio —
             <Link
               href="https://twitter.com/knyttneve"
