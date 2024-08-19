@@ -17,7 +17,7 @@ function AboutUsSection() {
       </div>
       <div className="text-div md:w-1/3 my-8">
         <div className="flex flex-col  items-center md:items-start">
-          <Badge className="custom_yellow text-xs bg-yellow-100 my-3">
+          <Badge className="light-gray-bg dark-gray-text text-xs  my-3">
             About Us
           </Badge>
           <h1 className=" text-center text-2xl custom_blue md:text-4xl font-bold mb-3">

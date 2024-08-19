@@ -1,5 +1,5 @@
 import AboutUsSection from "@/components/AboutUsSection";
-import FeatureSection from "@/components/FeatureSection";
+import FeatureSection from "@/components/AboutSection";
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialSection from "@/components/TestimonialSection";

@@ -6,15 +6,33 @@
   margin: 0;
   padding: 0;
 }
-.custom_blue {
-  color: #0d1c8a;
+.main-color {
+  color: #02929A;
 }
-.custom_bg_blue {
-  background-color: #081158;
+.main-color-bg{
+  background-color:#02929A; ;
 }
-.custom_yellow {
-  color: #fbb244;
+.sec-color1 {
+  color: #D9EFF0;
 }
-.custom_grey {
-  color: #888;
+.sec-color2 {
+  color: #E6F4F5;
+}
+.sec-color1-bg {
+  background-color: #D9EFF0;
+}
+.sec-color2 {
+  background-color: #E6F4F5;
+}
+.dark-gray-text {
+  color: #2D3434;
+}
+.light-gray-text{
+  color: #CFD3D3;
+}
+.dark-gray-bg {
+  background-color: #2D3434;
+}
+.light-gray-bg {
+  background-color: #CFD3D3;
 }

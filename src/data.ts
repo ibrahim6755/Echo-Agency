@@ -1,8 +1,9 @@
-interface FeatureCard {
+interface ProjectCard {
     id: number;
     image: string;
     title: string;
     description: string;
+    link:string;
   }
 
 interface ServiceCard{
@@ -19,27 +20,30 @@ interface TestimonialCard{
   job:string;
   description: string;
 }
-  export const featureCardData: FeatureCard[] = [
+  export const projectCardData: ProjectCard[] = [
     {
       id: 1,
-      image: "/images/seo-optimization.jpg",
-      title: "Marketing Analysis",
+      image: "/images/iyzil.png",
+      title: "Iylus Fearless Companion",
       description:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      link:"https://iyzil.com/",
     },
     {
       id: 2,
-      image: "/images/backlinks-marketing.jpg",
-      title: "Digital Marketing",
+      image: "/images/iylus.png",
+      title: "Discover Iylus",
       description:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        link:"https://iylus.com/",
     },
     {
       id: 3,
-      image: "/images/seo-backlinks.jpg",
-      title: "SEO and Backlinks",
+      image: "/images/zigron.png",
+      title: "Zigron",
       description:
         "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        link:"https://zigron.com/",
     },
   ];
 
