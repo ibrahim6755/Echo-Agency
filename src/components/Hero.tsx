@@ -16,7 +16,7 @@ function Hero() {
             <h1 className="title-font text-4xl md:text-6xl mb-4 font-bold main-color ">
               Expert SEO, SEM Services in London
             </h1>
-            <p className="mb-8 leading-relaxed dark-gray-text text-sm">
+            <p className="mb-8 leading-relaxed dark-gray-text text-sm dark:sec-color1">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookmarksgrove right at the coast of the Semantics, a
@@ -40,6 +40,7 @@ function Hero() {
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full">
             <Image
+            className="rounded-2xl"
               src="/images/carousel-image.png"
               width={600}
               height={150}

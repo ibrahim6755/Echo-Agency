@@ -9,16 +9,16 @@ function Footer() {
         <div className="w-full md:w-72 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link
             href="#"
-            className="flex title-font font-medium items-center md:justify-start justify-center custom_blue"
+            className="flex title-font items-center md:justify-start justify-center main-color text-3xl font-extrabold"
           >
-            <Image
+            {/* <Image
               src="/images/echo-logo.jpg"
               alt="company-logo"
               height={80}
               width={80}
-            />
+            /> */}Portfolio
           </Link>
-          <p className="mt-2 text-sm text-gray-500">
+          <p className="mt-2 text-sm dark-gray-text">
             We are Echo, a digital agency specializing in creating innovative
             websites and applications.
           </p>
@@ -26,51 +26,43 @@ function Footer() {
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium custom_blue tracking-widest text-sm mb-3">
-              Pages
+              Sites
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <Link
-                  href="#"
+                  href="https://iyzil.com/"
                   className="custom_grey hover:text-gray-400 text-xs"
                 >
-                  Blog
+                  Iyzil
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://iylus.com/"
                   className="custom_grey hover:text-gray-400 text-xs"
                 >
-                  About
+                  Iylus
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://zigron.com/"
                   className="custom_grey hover:text-gray-400 text-xs"
                 >
-                  Contact
+                  Zigron
                 </Link>
               </li>
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium custom_blue tracking-widest text-sm mb-3">
-              Resources
+              Sections
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <Link
-                  href="#"
-                  className="custom_grey hover:text-gray-400 text-xs"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="#about"
                   className="custom_grey hover:text-gray-400 text-xs"
                 >
                   About
@@ -78,10 +70,18 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#projects"
                   className="custom_grey hover:text-gray-400 text-xs"
                 >
-                  Contact
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#services"
+                  className="custom_grey hover:text-gray-400 text-xs"
+                >
+                  Services
                 </Link>
               </li>
             </nav>
@@ -121,8 +121,8 @@ function Footer() {
       </div>
       <div className="">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="custom_grey text-sm text-center sm:text-left">
-            © 2024 EchoAgency —
+          <p className="dark-gray-text text-sm text-center sm:text-left">
+            © 2024 Portfolio —
             <Link
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
@@ -133,7 +133,7 @@ function Footer() {
             </Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <Link href="#" className="text-gray-500">
+            <Link href="#" className="main-color">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -145,7 +145,7 @@ function Footer() {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 text-gray-500">
+            <Link href="#" className="ml-3 main-color">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -157,7 +157,7 @@ function Footer() {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 text-gray-500">
+            <Link href="#" className="ml-3 main-color">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -171,7 +171,7 @@ function Footer() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 text-gray-500">
+            <Link href="#" className="ml-3 main-color">
               <svg
                 fill="currentColor"
                 stroke="currentColor"

@@ -29,7 +29,7 @@ function FeatureSection() {
       <h1 className="text-center mt-14 text-3xl md:text-4xl font-bold mb-5 uppercase tracking-wide main-color">
         Projects
       </h1>
-      <div className="card-row">
+      <div id="projects" className="card-row">
         <ProjectCard data={projectCardData} />
       </div>
     </section>

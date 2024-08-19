@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "We  are Echo, a digital agency specializing in creating innovative websites and applications.",
+    "We  are Technical Recuritors Deals with world wide clients -",
   icons: {
     icon: "/favicon.ico",
   },

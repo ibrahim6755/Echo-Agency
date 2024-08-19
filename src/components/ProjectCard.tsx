@@ -39,15 +39,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {data.map((card, index) => (
-            <div className="p-4 md:w-1/3" key={card.id}>
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="p-4  md:w-1/3" key={card.id}>
+              <div className="h-full  border-2 border-gray-200 border-opacity-60 rounded-2xl p-2 overflow-hidden">
                 <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center rounded-xl"
                   src={card.image}
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-bold text-gray-900 mb-3">
                     {card.title}
                   </h1>
                   <p className="leading-relaxed mb-3">{card.description}</p>
@@ -62,10 +62,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                         className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>

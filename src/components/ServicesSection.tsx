@@ -12,11 +12,11 @@ interface ServicesSectionProps {
 }
 function ServicesSection() {
   return (
-    <section className="flex flex-col items-center justify-center my-4">
-      <Badge className="custom_yellow text-xs bg-yellow-100 my-3">
+    <section id="services" className="flex flex-col items-center justify-center my-4">
+      <Badge className="light-gray-bg dark-gray-text text-xs my-3">
         services
       </Badge>
-      <h1 className="custom_blue text-4xl md:text-5xl font-bold mb-3">Our Services</h1>
+      <h1 className="main-color text-4xl md:text-5xl font-bold mb-3">My Services</h1>
       <div className="cards-row">
         <ServiceCard data={serviceCardData} />
       </div>
