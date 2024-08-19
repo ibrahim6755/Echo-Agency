@@ -17,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ data }) => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:w-90 md:m-5 md:p-10 m-3">
       {data.map((service) => (
         <div key={service.id} className="dark:border-slate-300 rounded-md cursor-pointer shadow-sm dark:shadow-gray-800 shadow-gray-100 hover:shadow-md md:shadow-2xl transition-shadow duration-300 md:m-5">
-          <div className="flex items-center flex-col justify-center p-4">
+          <div className="flex items-center flex-col justify-center p-8">
             <Image
               className="rounded mb-6 transition-all duration-700 hover:scale-105"
               src={service.image}

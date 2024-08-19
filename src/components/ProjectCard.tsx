@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           {data.map((card, index) => (
-            <div className="p-4 md:w-1/3" key={card.id}>
+            <div className="my-4 md:p-4  md:w-1/3" key={card.id}>
               <div className="h-full  border-2 border-gray-600 dark:shadow-gray-800 shadow-gray-100 hover:shadow-md md:shadow-2xl transition-shadow duration-300 border-opacity-60 rounded-2xl p-2 overflow-hidden">
                 <img
                   className="lg:h-48 md:h-36 w-full object-cover object-center rounded-xl"

@@ -41,11 +41,11 @@ function TestimonialSection() {
               key={testimonial.id}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <div className="light-gray-bg p-5 rounded-md">
+              <div className=" bg-[#f5f5f5] p-5 rounded-md">
                 <h2 className="dark-gray-text text-sm">
                   “{testimonial.description}”
                 </h2>
-                <div className="person light-gray-bg m-3">
+                <div className="person bg-[#f5f5f5] m-3">
                   <div className="image flex justify-center items-center">
                     <Image
                       src={testimonial.image}
