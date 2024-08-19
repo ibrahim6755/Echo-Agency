@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                     <Link
                       href={card.link}
                       target="_blank"
-                      className="main-color inline-flex items-center md:mb-2 lg:mb-0"
+                      className="main-color  inline-flex items-center md:mb-2 lg:mb-0"
                     >
                       Explore
                       <svg
