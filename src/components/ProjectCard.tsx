@@ -14,27 +14,6 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
-    // <div className="flex flex-col md:flex-row items-center justify-center md:w-90 md:m-5">
-    //   {data.map((card, index) => (
-    //     <div className="md:px-4 md:p-0 md:m-5" key={index}>
-    //       <div className="flex items-center flex-col justify-center">
-    //         <Image
-    //           className="h-30 rounded mb-6 transition-all duration-700 hover:scale-105"
-    //           src={card.image}
-    //           alt={card.title}
-    //           width={60}
-    //           height={100}
-    //         />
-    //         <h1 className="text-center font-bold w-full text-2xl my-2">
-    //           {card.title}
-    //         </h1>
-    //         <h3 className="custom_blue text-sm text-center custom_grey">
-    //           {card.description}
-    //         </h3>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
@@ -50,12 +29,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                   <h1 className="title-font dark-gray-text dark:text-gray-400 text-lg font-bold mb-3">
                     {card.title}
                   </h1>
-                  <p className="leading-relaxed mb-3 dark:text-gray-400">{card.description}</p>
+                  <p className="leading-relaxed mb-3 dark:text-gray-400">
+                    {card.description}
+                  </p>
                   <div className="flex items-center flex-wrap ">
                     <Link
                       href={card.link}
                       target="_blank"
-                      className="main-color  inline-flex items-center md:mb-2 lg:mb-0"
+                      className="main-color inline-flex items-center md:mb-2 lg:mb-0"
                     >
                       Explore the site
                       <svg

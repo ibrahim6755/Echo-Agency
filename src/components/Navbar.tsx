@@ -26,7 +26,7 @@ import { Toggle } from "./Toggle";
 
 function Navbar() {
   return (
-    <div className=" mx-auto  py-6 sticky top-0 dark:bg-black bg-white">
+    <div className=" mx-auto py-6 sticky top-0 dark:bg-black bg-white">
       <header className="container hidden md:flex justify-between items-center">
         <div className="logo">
           <Link href="/" className="text-2xl font-bold main-color">
@@ -61,10 +61,10 @@ function Navbar() {
               <Link href="#about">About</Link>
             </li>
             <li className="list-none mx-2 px-2 text-sm cursor-pointer main-color font-bold">
-            <Link href="#services">Services</Link>
+              <Link href="#services">Services</Link>
             </li>
             <li className="list-none mx-2 px-2 text-sm cursor-pointer main-color font-bold">
-            <Link href="#projects">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
             <li className="list-none my-4  text-sm cursor-pointer main-color font-bold">
               <Toggle />
@@ -81,7 +81,7 @@ function Navbar() {
         </div>
       </header>
 
-      <header>
+      <header className="px-10">
         <nav className="flex justify-between items-center md:hidden">
           <Link href="/">
             {/* <Image
@@ -109,7 +109,9 @@ function Navbar() {
                       height={80}
                       width={80}
                     /> */}
-                    <h1 className="text-start text-2xl font-bold main-color">Nimra Nisar</h1>
+                    <h1 className="text-start text-2xl font-bold main-color">
+                      Nimra Nisar
+                    </h1>
                   </SheetTitle>
                   <SheetDescription>
                     <div className="links mt-10 ">
@@ -117,7 +119,7 @@ function Navbar() {
                         <SheetClose asChild>
                           <Button type="submit">
                             <li className="list-none my-4 text-sm cursor-pointer main-color">
-                             <Link href="/">Home</Link>
+                              <Link href="/">Home</Link>
                             </li>
                           </Button>
                         </SheetClose>
@@ -178,14 +180,14 @@ function Navbar() {
                         <SheetClose asChild>
                           <Button type="submit">
                             <li className="list-none my-4 text-sm cursor-pointer main-color">
-                            <Link href="#services">Services</Link>
+                              <Link href="#services">Services</Link>
                             </li>
                           </Button>
                         </SheetClose>
                         <SheetClose asChild>
-                          <Button type="submit" >
+                          <Button type="submit">
                             <li className="list-none my-4 text-sm cursor-pointer main-color">
-                            <Link href="#projects">Projects</Link>
+                              <Link href="#projects">Projects</Link>
                             </li>
                           </Button>
                         </SheetClose>

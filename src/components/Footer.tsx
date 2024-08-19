@@ -4,20 +4,16 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="text-gray-600 body-font container">
+    <footer className=" body-font container">
       <div className="container px-5 py-24 mx-auto flex md:items-center justify-center lg:items-start md:flex-row  flex-col">
         <div className="w-full md:w-72 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link
-            href="#"
+            href="/"
             className="flex title-font items-center md:justify-start justify-center main-color text-3xl font-extrabold"
           >
-            {/* <Image
-              src="/images/echo-logo.jpg"
-              alt="company-logo"
-              height={80}
-              width={80}
-            /> */}
-             <h1 className="text-start text-2xl font-bold main-color">Nimra Nisar</h1>
+            <h1 className="text-start text-2xl font-bold main-color">
+              Nimra Nisar
+            </h1>
           </Link>
           <p className="mt-2 text-sm dark-gray-text dark:text-gray-400">
             We are Echo, a digital agency specializing in creating innovative
@@ -97,7 +93,7 @@ function Footer() {
                   href="#"
                   className="text-gray-400 dark:hover:text-gray-200 text-xs"
                 >
-                  info@Cololib
+                  Ahmednimra95@gmail.com
                 </Link>
               </li>
               <li>
@@ -130,11 +126,11 @@ function Footer() {
               className="custom_grey ml-1"
               target="_blank"
             >
-              @ibrahimghani030
+              @Ahmednimra95
             </Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <Link href="#" className="main-color">
+            <Link href="www.facebook.com" className="main-color">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -146,7 +142,7 @@ function Footer() {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 main-color">
+            <Link href="www.twitter.com" className="ml-3 main-color">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -158,7 +154,7 @@ function Footer() {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 main-color">
+            <Link href="www.instagram.com" className="ml-3 main-color">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -172,7 +168,7 @@ function Footer() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </Link>
-            <Link href="#" className="ml-3 main-color">
+            <Link href="www.linkedin.com" className="ml-3 main-color">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
