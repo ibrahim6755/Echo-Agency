@@ -8,9 +8,9 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Nimra Nisar",
   description:
-    "We  are Technical Recuritors Deals with world wide clients -",
+    "I am a  Technical Recuritor Deals with world wide clients -",
   icons: {
     icon: "/favicon.ico",
   },
